@@ -7,7 +7,11 @@ SELECT
                  AND EXTRACT(DAY FROM CURRENT_DATE) >= EXTRACT(DAY FROM birth_date)) 
         THEN EXTRACT(YEAR FROM CURRENT_DATE) - EXTRACT(YEAR FROM birth_date)
         ELSE EXTRACT(YEAR FROM CURRENT_DATE) - EXTRACT(YEAR FROM birth_date) - 1 
+<<<<<<< HEAD
     END AS age_years, 
+=======
+    END AS age_years
+>>>>>>> 63f7883ed5d06f7dc7988f9e039f97978984c755
 FROM people 
 ORDER BY age_years DESC, last_name, first_name;
 
